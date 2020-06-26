@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>Web-Woman</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+              <!--=.=.=.=.=.=.=.=.=.= Bootstrap/CSS =.=.=.=.=.=.=.=.=.=-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Krona+One&family=Teko:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+                <!--=.=.=.=.=.=.=.=.=.= Sprite Map =.=.=.=.=.=.=.=.=.=-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="twitter" viewbox="0 0 24 24" enable-background="0 0 175 175"><path fill="#2aa9dc" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></symbol>
+
+      <symbol id="facebook" viewBox="0 0 24 24" enable-background="0 0 175 175"><path fill="#2aa9dc" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></symbol>
+
+      <symbol id="instagram" viewBox="0 0 24 24" enable-background="new 0 0 175 175"><path fill="#2aa9dc" d="M17.833 6.595v1.476c0 .237-.193.429-.435.429h-1.465c-.238 0-.434-.192-.434-.429v-1.476c0-.237.195-.428.434-.428h1.465c.242 0 .435.191.435.428zm-5.833 7.498c1.121 0 2.028-.908 2.028-2.029s-.907-2.029-2.028-2.029-2.028.908-2.028 2.029.907 2.029 2.028 2.029zm12-2.093c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-1.75h-3.953c.316.533.508 1.149.508 1.813 0 1.968-1.596 3.564-3.563 3.564-1.969 0-3.564-1.596-3.564-3.564 0-.665.191-1.281.509-1.813h-3.937v5.996c0 1.521 1.27 2.754 2.791 2.754h8.454c1.521 0 2.755-1.233 2.755-2.754v-5.996zm-7.009 4.559c1.515 0 2.745-1.232 2.745-2.746 0-.822-.364-1.56-.937-2.063-.202-.177-.429-.324-.677-.437-.346-.157-.729-.245-1.132-.245-.405 0-.788.088-1.133.245-.246.112-.474.26-.675.437-.574.503-.938 1.242-.938 2.063.001 1.514 1.234 2.746 2.747 2.746zm7.009-7.055c0-1.521-1.234-2.754-2.755-2.754h-7.162v2.917h-.583v-2.917h-.583v2.917h-.584v-2.872c-.202.033-.397.083-.583.157v2.715h-.583v-2.393c-.702.5-1.167 1.31-1.167 2.23v1.913h4.359c.681-.748 1.633-1.167 2.632-1.167 1.004 0 1.954.422 2.631 1.167h4.378v-1.913z"/></symbol>
+
+      <symbol id="phone" viewBox="0 0 24 24" enable-background="new 0 0 175 175"><path fill="#2aa9dc" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></symbol>
+
+      <symbol id="github" viewBox="0 0 24 24" enable-background="new 0 0 175 175"><path fill="#2aa9dc" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></symbol>
+
+      <symbol id="email" viewBox="0 0 24 24" enable-background="new 0 0 175 175"><path fill="#2aa9dc" d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></symbol>
+    </svg> <!-- /Sprite Map -->
+
+                <!--=.=.=.=.=.=.=.=.=.= Nav Bar =.=.=.=.=.=.=.=.=.=-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand order-1" href="index.html" >
+          <img class="rounded-circle" width="50" height="50" alt="" loading="lazy" src="img/WWpride.jpg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Classified Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resumé</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Secret Identity
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="who.html" role="button" data-toggle="modal" data-target=#top-secret>Who is Web-Woman?</a>
+            <a class="dropdown-item" href="favorite.html">Favorite Things</a>
+            <a class="dropdown-item" href="hobbies.html">Hobbies</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav> <!-- /nav bar -->
+
+              <!--=.=.=.=.=.=.=.=.=.= Header =.=.=.=.=.=.=.=.=.=-->
+      <div class="jumbotron jumbotron-fluid bg-dark pt-1" >
+      <div class="container text-center text-light my-5">
+        <h1 class="display-2 header">Logo Design</h1>
+        <p class="lead h4">How does it work?</p>
+      </div>
+    </div><!-- /header -->
+
+              <!--=.=.=.=.=.=.=.=.=.= Main Content =.=.=.=.=.=.=.=.=.=-->
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-10 col-lg-4 text-center mx-auto">
+            <img class="super" src="img/splat.png"><br><strong class="col-head">Step One</strong><br><p class="col-text mt-3 h3">Request a Quote. <br>Fill out the form with as much detail as you can, describing what you are looking for in a logo. Don't worry, you can always add/change details later. Web-Woman will respond with a quote within 24 hours. <br><button class="mt-2 p-2 rounded quote-btn" type="submit" data-toggle="modal" data-target="#quote-me">Quote Me!</button></p>
+           </div>
+          <div class="col-10 col-lg-4 text-center mx-auto">
+            <img class="super" src="img/pow.png"><br><strong class="col-head">Step Two</strong><br><p class="col-text mt-3 h3">Once you recieve and approve the quote and pay a 50% deposit, <br>Web-Woman will begin designing several logo options, checking in with you along the way and adjusting the logo as needed per your request. Another super power of Web-Woman is her excellent communication skills!</p></div>
+          <div class="col-10 col-lg-4 text-center mx-auto">
+            <img class="super" src="img/kapow.png"><br><strong class="col-head">Step Three</strong><br><p class="col-text mt-3 h3">Once you are happy with the project, the remaining 50% will be due and your final logo files will be sent to you.</p></div>
+        </div>
+        <p class="text-center delivered mt-2">Web-Woman will send you the high-resolution JPEG, the Photoshop .PSD file and any other size/doctype request you may have.</p>
+      </div>
+
+      <blockquote class="blockquote mt-3">
+    <p class="text-center col-head quote">"It's a nerd!"<br>"It's a brain!"<br>"It's Web-Woman!"</p>
+  </blockquote>
+
+            <!--=.=.=.=.=.=.=.=.=.= Call to Action =.=.=.=.=.=.=.=.=.=-->
+            <blockquote class="blockquote mt-3">
+              <p class="text-center col-head quote">"It's a nerd!"<br>"It's a brain!"<br>"It's Web-Woman!"</p>
+            </blockquote>
+      <div class="container text-center">
+        <h2 class="block pb-3 title">Activate the Web-Woman Beacon to call for help!</h2>
+        <a href="index.html" type="button" class="" data-toggle="modal" data-target="#quote-me"><div class="picture"></div></a>
+      </div><!-- /Call to Action -->
+
+
+            <!--=.=.=.=.=.=.=.=.=.= Footer =.=.=.=.=.=.=.=.=.=-->
+    <footer>
+      <ul class="nav nav-footer contact-info justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="https://github.com/Web-Woman/" target="_blank">
+          <svg class="contact-icon">
+            <use xlink: href="#github">
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="https://twitter.com/iamwebwoman/" target="_blank">
+          <svg class="contact-icon">
+            <use xlink: href="#twitter">
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="https://www.instagram.com/iamwebwoman/" target="_blank">
+          <svg class="contact-icon">
+            <use xlink: href="#instagram">
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="https://www.facebook.com/iamwebwoman/" target="_blank">
+          <svg class="contact-icon">
+            <use xlink: href="#facebook">
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="mailto:iamwebwoman@gmail.com" target="_blank">
+          <svg class="contact-icon">
+            <use xlink: href="#email">
+          </svg>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link footer-icon" href="tel:7376102938">
+          <svg class="contact-icon">
+            <use xlink: href="#phone">
+          </svg>
+        </a>
+      </li>
+      </ul>
+      <p class="copyright text-right mt-2 mr-1">  &copy;2020 Web-Woman </p>
+    </footer><!-- /Footer -->
+
+            <!--=.=.=.=.=.=.=.=.=.= Modal =.=.=.=.=.=.=.=.=.=-->
+
+    <div class="modal fade" id="top-secret" tabindex="-1" role="dialog" aria-labelledby="top-secret" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title header" id="exampleModalLabel">This Information is Top-Secret!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <p class="lead">Do you promise to keep Web-Woman's identity confidential?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Heck No!</button>
+            <a href="who.html"><button type="button" class="btn btn-primary">I Do!</button></a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /Modal -->
+    <!--=.=.=.=.=.=.=.=.=.= Quote Modal =.=.=.=.=.=.=.=.=.=-->
+      <div class="modal fade" id="quote-me" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content  teko text-center">
+      <div class="modal-header">
+        <h5 class="modal-title">Request a Quote</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <p class="teko text-center mt-1"><strong>What services are you interested in? Check all that apply.</strong></p>
+          <div class="row row-cols-2">
+            <div class="form-check text-center col">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label indie" for="defaultCheck1">
+              Website Building
+            </label>
+              </div>
+              <div class="form-check text-center col">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label indie" for="defaultCheck1">
+                Product Photography
+              </label>
+            </div>
+          </div>
+            <div class="form-check text-center ">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label indie" for="defaultCheck1">
+              Logo Design
+            </label>
+          </div>
+          <p class="teko text-center mt-4"><strong> For Product Photography: </strong></p>
+          <div class="form-group">
+             <label for="exampleFormControlSelect1 indie">Number of Products:</label>
+             <select class="form-control indie" id="exampleFormControlSelect1">
+               <option>No Photography Needed</option>
+               <option>1</option>
+               <option>2-3</option>
+               <option>4-5</option>
+               <option>5-10</option>
+               <option>Greater than 10</option>
+             </select>
+           </div>
+           <div class="form-group indie">
+              <label for="exampleFormControlTextarea1">Describe your Product:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <p class="teko text-center mt-4"><strong> For Logo Design: </strong></p>
+            <div class="form-group indie">
+               <label for="exampleFormControlTextarea1">Describe your business and the image you have in mind for your logo (please provide as much detail as you can. ex. Colors, fonts, styles etc. Feel free to upload any sketches or example images at the bottom of this form!):</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+             <p class="teko text-center mt-4"><strong> For Website Building: </strong></p>
+             <label class="indie" for="">What is the primary use for your Website?</label>
+             <input class="form-control indie" type="text" placeholder="">
+             <label class="indie mt-2" for="">Which functions or features are necessary for you to have? Check any that apply.</label>
+             <div class="container">
+        <div class="row row-cols-2">
+           <div class="form-check text-center col">
+             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+             <label class="form-check-label indie" for="defaultCheck1">
+               About us
+             </label>
+               </div>
+               <div class="form-check text-center col">
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label indie" for="defaultCheck1">
+                 Blog
+               </label>
+             </div>
+             <div class="form-check text-center col">
+             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+             <label class="form-check-label indie" for="defaultCheck1">
+               Newsletter Sign-up
+             </label>
+            </div>
+            <div class="form-check text-center col">
+             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+             <label class="form-check-label indie" for="defaultCheck1">
+               Accept payments
+             </label>
+               </div>
+               <div class="form-check text-center col">
+               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <label class="form-check-label indie" for="defaultCheck1">
+                 Contact forms
+               </label>
+             </div>
+             <div class="form-check text-center col">
+             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+             <label class="form-check-label indie" for="defaultCheck1">
+               Social Media Integration
+             </label>
+           </div>
+           <div class="form-check text-center col">
+           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+           <label class="form-check-label indie" for="defaultCheck1">
+             Image Gallery
+           </label>
+         </div>
+           <div class="form-check text-center col">
+             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+             <label class="form-check-label indie" for="defaultCheck1">
+               FAQ- Frequently Asked Questions
+             </label>
+           </div>
+          </div>
+        </div>
+             <label class="indie mt-2" for="">Any Other Features Not Listed Above?</label>
+             <input class="form-control indie" type="text" placeholder="">
+             <label class="indie mt-2" for="">Any Color Preferences or Color Pallets? (List Hex Codes if Known for Accuracy)</label>
+             <input class="form-control indie" type="text" placeholder="">
+             <label class="indie mt-2" for="">Describe your Business:</label>
+             <input class="form-control indie" type="text" placeholder="">
+             <label class="indie mt-2" for="">List any websites that have the look and feel you want to relay:</label>
+             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             <div class="form-group indie mt-2">
+                <label for="exampleFormControlTextarea1">What is the most important information your site must relay to the user, especially on the home page?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+          <p class="teko text-center mt-4"><strong> Contact Info: </strong></p>
+          <div class="form-row indie">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+          <div class="form-group row mt-1">
+              <div class="col-sm-10 indie">
+                <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group indie">
+              <label for="exampleFormControlFile1">Upload any files that may be helpful</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer teko">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-send">Send!</button>
+      </div>
+      </div>
+      </div>
+      </div><!-- /Quote Modal -->
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

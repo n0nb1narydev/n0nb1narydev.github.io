@@ -1,0 +1,145 @@
+body {
+  background-color: #c6c6c8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Beacon before and after hover */
+.picture {
+    content: url('../img/beaconbefore.png');
+    margin:auto;
+    width:200px;
+    height:200px;
+}
+.picture:hover {
+    content: url('../img/beacon.png');
+}
+/* /Beacon before and after hover */
+
+.jumbotron-main {
+  height: 400px;
+  background-image: url(../img/wwbg.jpg);
+  background-size: cover;
+}
+.navbar {
+  background-color: #ed4834;
+  font-family: Indie Flower , auto;
+  font-size: 1.5rem;
+}
+.lead {
+  font-family: Indie Flower , auto;
+  font-size: 1.5em;
+}
+.header,
+.title,
+.delivered
+.teko {
+  font-family: Teko , auto;
+}
+.indie {
+  font-family: Indie Flower , auto;
+  font-size: 1.2rem;
+}
+
+/* Main Content CSS */
+.super {  /* Column images */
+  width:200px;
+  height:200px;
+  margin-bottom: 1em;
+
+}
+.col-text {
+  font-family: Indie Flower , auto;
+}
+.col-head {
+  font-family: Teko , auto;
+  font-size: 1.5em;
+  background-color: #2aa9dc;
+  padding:5px 9px;
+  color:white;
+  border-radius: 6px;
+  border: solid 3px black;
+}
+.col-head-btn:hover {
+    background-color: #fcf21e;
+    color: #ed4834;
+
+  }
+.quote {
+  background-color: #fcf21e;
+  color: #ed4834;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/*--------------------------- Price Quote */
+.quote-btn {
+  background-color: #fcf21e;
+  color: #ed4834;
+}
+.quote-btn:hover {
+  background-color: #2aa9dc;
+  color:white;
+}
+.btn-send {
+  background-color: #fcf21e;
+  color: #ed4834;
+}
+.btn-send:hover {
+  background-color: #2aa9dc;
+  color:white;
+}
+.col-text {
+  font-size: 1.5rem;
+}
+
+
+/* ----------------------  Contact Info- Footer */
+footer {
+  background-color: #ed4834;
+  padding: 10px 0;
+}
+.nav-footer ul {
+  justify-content: center;
+}
+.contact-info {
+  margin: 0;
+  list-style: none;
+}
+.contact-info li {
+  margin: 0 0 0 10px;
+  padding:0 10px;
+}
+.footer-icon,
+.contact-icon {
+  width:30px;
+  height:30px;
+}
+a.nav-link.footer-icon {
+  padding:0;
+}
+.copyright {
+  display:block;
+  color: #c6c6c8;
+} /* --------------------- /Contact Info- Footer */
+
+/*            Media Query
+          /*              Mobile        */
+@media (max-width: 769px) {
+  .header {
+    font-size: 3rem;
+  }
+  .picture {
+    width:150px;
+    height:150px;
+  }
+  .col-text {
+    font-size: 1.25rem;
+  }
+}
