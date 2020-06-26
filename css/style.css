@@ -8,13 +8,13 @@ body {
 
 /* Beacon before and after hover */
 .picture {
-    content: url('../img/beaconbefore.png');
+    content: url('../img/Beaconbefore.png');
     margin:auto;
     width:200px;
     height:200px;
 }
 .picture:hover {
-    content: url('../img/beacon.png');
+    content: url('../img/Beacon.png');
 }
 /* /Beacon before and after hover */
 
