@@ -164,155 +164,166 @@
       </div>
     </div> <!-- /Modal -->
     <!--=.=.=.=.=.=.=.=.=.= Quote Modal =.=.=.=.=.=.=.=.=.=-->
-      <div class="modal fade" id="quote-me" tabindex="-1" role="dialog">
+    <div class="modal fade" id="quote-me" tabindex="-1" role="dialog">
       <div class="modal-dialog">
-      <div class="modal-content  teko text-center">
-      <div class="modal-header">
-        <h5 class="modal-title">Request a Quote</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
+        <div class="modal-content  teko text-center">
+          <div class="modal-header">
+            <h5 class="modal-title">Request a Quote</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-      <div class="modal-body">
-        <form>
-          <p class="teko text-center mt-1"><strong>What services are you interested in? Check all that apply.</strong></p>
-          <div class="row row-cols-2">
-            <div class="form-check text-center col">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label indie" for="defaultCheck1">
-              Website Building
-            </label>
+          <div class="modal-body">
+            <form action="https://formsubmit.co/iamwebwoman@gmail.com" method="POST">
+              <p class="teko text-center mt-1"><strong>What services are you interested in? Check all that apply.</strong></p>
+              <div class="row row-cols-2">
+                <div class="form-check text-center col">
+                <input name = "website-building" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label indie" for="defaultCheck1">
+                  Website Building
+                </label>
+                  </div>
+                  <div class="form-check text-center col">
+                  <input name = "product-photography" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label indie" for="defaultCheck1">
+                    Product Photography
+                  </label>
+                </div>
               </div>
-              <div class="form-check text-center col">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label indie" for="defaultCheck1">
-                Product Photography
-              </label>
-            </div>
-          </div>
-            <div class="form-check text-center ">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label indie" for="defaultCheck1">
-              Logo Design
-            </label>
-          </div>
-          <p class="teko text-center mt-4"><strong> For Product Photography: </strong></p>
-          <div class="form-group">
-             <label for="exampleFormControlSelect1 indie">Number of Products:</label>
-             <select class="form-control indie" id="exampleFormControlSelect1">
-               <option>No Photography Needed</option>
-               <option>1</option>
-               <option>2-3</option>
-               <option>4-5</option>
-               <option>5-10</option>
-               <option>Greater than 10</option>
-             </select>
-           </div>
-           <div class="form-group indie">
-              <label for="exampleFormControlTextarea1">Describe your Product:</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <p class="teko text-center mt-4"><strong> For Logo Design: </strong></p>
-            <div class="form-group indie">
-               <label for="exampleFormControlTextarea1">Describe your business and the image you have in mind for your logo (please provide as much detail as you can. ex. Colors, fonts, styles etc. Feel free to upload any sketches or example images at the bottom of this form!):</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-             </div>
-             <p class="teko text-center mt-4"><strong> For Website Building: </strong></p>
-             <label class="indie" for="">What is the primary use for your Website?</label>
-             <input class="form-control indie" type="text" placeholder="">
-             <label class="indie mt-2" for="">Which functions or features are necessary for you to have? Check any that apply.</label>
-             <div class="container">
-        <div class="row row-cols-2">
-           <div class="form-check text-center col">
-             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-             <label class="form-check-label indie" for="defaultCheck1">
-               About us
-             </label>
+                <div class="form-check text-center ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label name = "logo-design" class="form-check-label indie" for="defaultCheck1">
+                  Logo Design
+                </label>
+              </div>
+              <p class="teko text-center mt-4"><strong> For Product Photography: </strong></p>
+              <div class="form-group">
+                 <label for="exampleFormControlSelect1 indie">Number of Products:</label>
+                 <select name = "number-photos" class="form-control indie" id="exampleFormControlSelect1">
+                   <option>No Photography Needed</option>
+                   <option>1</option>
+                   <option>2-3</option>
+                   <option>4-5</option>
+                   <option>5-10</option>
+                   <option>Greater than 10</option>
+                 </select>
+               </div>
+               <div class="form-group indie">
+                  <label for="exampleFormControlTextarea1">Describe your Product:</label>
+                  <textarea name = "describe-product" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <p class="teko text-center mt-4"><strong> For Logo Design: </strong></p>
+                <div class="form-group indie">
+                   <label for="exampleFormControlTextarea1">Describe your business and the image you have in mind for your logo (please provide as much detail as you can. ex. Colors, fonts, styles etc. Feel free to upload any sketches or example images at the bottom of this form!):</label>
+                   <textarea name = "describe-business" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                 </div>
+                 <p class="teko text-center mt-4"><strong> For Website Building: </strong></p>
+                 <label class="indie" for="">What is the primary use for your Website?</label>
+                 <input name = "primary-use" class="form-control indie" type="text" placeholder="">
+                 <label class="indie mt-2" for="">Which functions or features are necessary for you to have? Check any that apply.</label>
+                 <div class="container">
+            <div class="row row-cols-2">
+               <div class="form-check text-center col">
+                 <input name = "about-us" name = "functions-features" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label indie" for="defaultCheck1">
+                   About us
+                 </label>
+                   </div>
+                   <div class="form-check text-center col">
+                   <input name = "blog" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                   <label class="form-check-label indie" for="defaultCheck1">
+                     Blog
+                   </label>
+                 </div>
+                 <div class="form-check text-center col">
+                 <input name = "newsletter" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label indie" for="defaultCheck1">
+                   Newsletter Sign-up
+                 </label>
+                </div>
+                <div class="form-check text-center col">
+                 <input name = "accept-payments" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label indie" for="defaultCheck1">
+                   Accept payments
+                 </label>
+                   </div>
+                   <div class="form-check text-center col">
+                   <input name = "contact-forms" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                   <label class="form-check-label indie" for="defaultCheck1">
+                     Contact forms
+                   </label>
+                 </div>
+                 <div class="form-check text-center col">
+                 <input name = "social-media" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label indie" for="defaultCheck1">
+                   Social Media Integration
+                 </label>
                </div>
                <div class="form-check text-center col">
-               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+               <input name = "image-gallery" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                <label class="form-check-label indie" for="defaultCheck1">
-                 Blog
+                 Image Gallery
                </label>
              </div>
-             <div class="form-check text-center col">
-             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-             <label class="form-check-label indie" for="defaultCheck1">
-               Newsletter Sign-up
-             </label>
-            </div>
-            <div class="form-check text-center col">
-             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-             <label class="form-check-label indie" for="defaultCheck1">
-               Accept payments
-             </label>
-               </div>
                <div class="form-check text-center col">
-               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-               <label class="form-check-label indie" for="defaultCheck1">
-                 Contact forms
-               </label>
-             </div>
-             <div class="form-check text-center col">
-             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-             <label class="form-check-label indie" for="defaultCheck1">
-               Social Media Integration
-             </label>
-           </div>
-           <div class="form-check text-center col">
-           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-           <label class="form-check-label indie" for="defaultCheck1">
-             Image Gallery
-           </label>
-         </div>
-           <div class="form-check text-center col">
-             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-             <label class="form-check-label indie" for="defaultCheck1">
-               FAQ- Frequently Asked Questions
-             </label>
-           </div>
+                 <input name = "FAQ" class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label indie" for="defaultCheck1">
+                   FAQ- Frequently Asked Questions
+                 </label>
+               </div>
+              </div>
+            </div>
+                 <label class="indie mt-2" for="">Any Other Features Not Listed Above?</label>
+                 <input name = "other-features" class="form-control indie" type="text" placeholder="">
+                 <label class="indie mt-2" for="">Any Color Preferences or Color Pallets? (List Hex Codes if Known for Accuracy)</label>
+                 <input name = "color-preferences" class="form-control indie" type="text" placeholder="">
+                 <label class="indie mt-2" for="">Describe your Business:</label>
+                 <input name = "describe-business" class="form-control indie" type="text" placeholder="">
+                 <label class="indie mt-2" for="">List any websites that have the look and feel you want to relay:</label>
+                 <textarea class="model-websites" id="exampleFormControlTextarea1" rows="3"></textarea>
+                 <div class="form-group indie mt-2">
+                    <label for="exampleFormControlTextarea1">What is the most important information your site must relay to the user, especially on the home page?</label>
+                    <textarea name = "important-info" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+              <p class="teko text-center mt-4"><strong> Contact Info: </strong></p>
+              <div class="form-row indie">
+                <div class="col">
+                  <input name = "first-name" type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="col">
+                  <input name = "last-name" type="text" class="form-control" placeholder="Last name" required>
+                </div>
+              </div>
+              <div class="form-group row mt-1">
+                  <div class="col-sm-10 indie">
+                    <input name = "email" type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="form-group indie">
+                  <label for="exampleFormControlFile1">Upload any files that may be helpful</label>
+                  <input name = "files" type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
           </div>
+          <div class="modal-footer teko">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-send">Send!</button>
+          </div>
+            <script>
+          document.forms[0].onsubmit = function(event){
+            createCard(event);
+          }
+
+          function createCard(event){
+            event.target.style.display = "none";
+          }
+            </script>
+
+          </form>
         </div>
-             <label class="indie mt-2" for="">Any Other Features Not Listed Above?</label>
-             <input class="form-control indie" type="text" placeholder="">
-             <label class="indie mt-2" for="">Any Color Preferences or Color Pallets? (List Hex Codes if Known for Accuracy)</label>
-             <input class="form-control indie" type="text" placeholder="">
-             <label class="indie mt-2" for="">Describe your Business:</label>
-             <input class="form-control indie" type="text" placeholder="">
-             <label class="indie mt-2" for="">List any websites that have the look and feel you want to relay:</label>
-             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-             <div class="form-group indie mt-2">
-                <label for="exampleFormControlTextarea1">What is the most important information your site must relay to the user, especially on the home page?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-          <p class="teko text-center mt-4"><strong> Contact Info: </strong></p>
-          <div class="form-row indie">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name">
-            </div>
-          </div>
-          <div class="form-group row mt-1">
-              <div class="col-sm-10 indie">
-                <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group indie">
-              <label for="exampleFormControlFile1">Upload any files that may be helpful</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
-            </div>
-        </form>
       </div>
-      <div class="modal-footer teko">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-send">Send!</button>
-      </div>
-      </div>
-      </div>
-      </div><!-- /Quote Modal -->
+    </div><!-- /Quote Modal -->
+
 
 
 
