@@ -30,9 +30,9 @@ section {
   font-family: Indie Flower, auto;
 }
 .game {
-  margin: 20px;
-  width: 90vw;
-  height:auto;
+  margin-top: 20px;
+  width: 100%;
+  height:100%;
 }
 
 
