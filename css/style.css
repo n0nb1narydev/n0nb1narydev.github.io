@@ -30,9 +30,11 @@ section {
   font-family: Indie Flower, auto;
 }
 .game {
-
-
+  margin: 20px;
+  width: 90vw;
+  height:auto;
 }
+
 
 
 /* Beacon before and after hover */
