@@ -34,6 +34,11 @@ section {
   width: 100vw;
   height:100vh;
 }
+.resume {
+  width: 90vw;
+  height: auto;
+  margin: auto;
+}
 
 
 
