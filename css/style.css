@@ -28,12 +28,19 @@ section {
 .about {
   font-size: 1.5em;
   font-family: Indie Flower, auto;
+  margin-top: 200px;
 }
+
+/* Projects page */
+
 .game {
   margin-top: 20px;
   width: 100vw;
   height:100vh;
 }
+
+/* Resume */
+
 .resume {
   width: 90vw;
   height: auto;
@@ -80,6 +87,7 @@ section {
 .teko {
   font-family: Teko , auto;
 }
+
 .tagline {
   text-shadow: 2px 2px 4px #000000;
 }
@@ -193,6 +201,9 @@ a.nav-link.footer-icon {
   .tagline {
     font-size: 1.5rem;
   }
+  figcaption {
+    font-size: .5em;
+  }
   .picture {
     width:150px;
     height:150px;
@@ -200,7 +211,10 @@ a.nav-link.footer-icon {
   .col-text {
     font-size: 1.25rem;
   }
-  .mel-pic {
-    width: 75%;
+  .about{
+    margin-top: 100px;
   }
+  /* .mel-pic {
+    width: 75%;
+  } */
 }
