@@ -58,7 +58,7 @@ section {
 .jumbotron-main {
   height: 400px;
   background-image: url(../img/WWbg.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .navbar {
   background-color: #ed4834;
