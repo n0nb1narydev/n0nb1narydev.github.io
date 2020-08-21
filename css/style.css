@@ -60,15 +60,20 @@ section {
   background-image: url(../img/WWbg.jpg);
   background-size: 100% 100%;
 }
+.jumbotron {
+  display: flex;
+  justify-content: center;
+
+}
+.header-text {
+  margin: auto;
+}
 .navbar {
-  background-color: #ed4834;
+  background-color: #5e5e5e;
   font-family: Indie Flower , auto;
   font-size: 1.5rem;
 }
-.lead {
-  font-family: Indie Flower , auto;
-  font-size: 1.5em;
-}
+
 .header,
 .title,
 .delivered,
@@ -95,20 +100,20 @@ section {
 .col-head {
   font-family: Teko , auto;
   font-size: 1.5em;
-  background-color: #2aa9dc;
+  background-color: #b483de;
   padding:5px 9px;
-  color:white;
+  color:#fdf765;
   border-radius: 6px;
   border: solid 3px black;
 }
 .col-head-btn:hover {
-    background-color: #fcf21e;
-    color: #ed4834;
+    background-color: #fdf765;
+    color: #b483de;
 
   }
 .quote {
-  background-color: #fcf21e;
-  color: #ed4834;
+  background-color: #b483de;
+  color: #fdf765;
   border-radius: 0;
   border-left: none;
   border-right: none;
@@ -120,20 +125,20 @@ a:hover {
 
 /*--------------------------- Price Quote */
 .quote-btn {
-  background-color: #fcf21e;
-  color: #ed4834;
+  background-color: #b483de;
+  color: #fdf765;
 }
 .quote-btn:hover {
-  background-color: #2aa9dc;
-  color:white;
+  background-color: #fdf765;
+  color:#b483de;
 }
 .btn-send {
-  background-color: #fcf21e;
-  color: #ed4834;
+  background-color: #b483de;
+  color: #fdf765;
 }
 .btn-send:hover {
-  background-color: #2aa9dc;
-  color:white;
+  background-color: #fdf765;
+  color:#b483de;
 }
 .col-text {
   font-size: 1.5rem;
@@ -142,7 +147,7 @@ a:hover {
 
 /* ----------------------  Contact Info- Footer */
 footer {
-  background-color: #ed4834;
+  background-color: #5e5e5e;
   padding: 10px 0;
 }
 .nav-footer ul {
