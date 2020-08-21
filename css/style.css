@@ -75,6 +75,9 @@ section {
 .teko {
   font-family: Teko , auto;
 }
+.tagline {
+  text-shadow: 2px 2px 4px #000000;
+}
 .indie {
   font-family: Indie Flower , auto;
 }
@@ -166,11 +169,24 @@ a.nav-link.footer-icon {
   color: #c6c6c8;
 } /* --------------------- /Contact Info- Footer */
 
-/*            Media Query
-          /*              Mobile        */
+/*            Media Query */
+          
+@media (max-width: 1000px) {
+  .header {
+    font-size: 3.5rem;
+  }
+  .tagline {
+    font-size: 2rem;
+  }
+}
+
+/*              Mobile        */
 @media (max-width: 769px) {
   .header {
     font-size: 3rem;
+  }
+  .tagline {
+    font-size: 1.5rem;
   }
   .picture {
     width:150px;
