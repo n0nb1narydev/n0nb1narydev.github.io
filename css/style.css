@@ -38,6 +38,11 @@ section {
   width: 100vw;
   height:100vh;
 }
+.voyage-img {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+}
 
 /* Resume */
 
