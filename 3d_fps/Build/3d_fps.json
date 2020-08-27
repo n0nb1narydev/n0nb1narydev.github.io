@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Mel's 3d Game",
+"productVersion": "0.1",
+"dataUrl": "3d_fps.data.unityweb",
+"wasmCodeUrl": "3d_fps.wasm.code.unityweb",
+"wasmFrameworkUrl": "3d_fps.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.7f1"
+}
