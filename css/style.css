@@ -201,6 +201,9 @@ a.nav-link.footer-icon {
   .tagline {
     font-size: 2rem;
   }
+.mel-pic {
+    width: 10%;
+}
 }
 
 /*              Mobile        */
@@ -224,7 +227,5 @@ a.nav-link.footer-icon {
   .about{
     margin-top: 100px;
   }
-  /* .mel-pic {
-    width: 75%;
-  } */
+
 }
